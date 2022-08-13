@@ -1,0 +1,42 @@
+#closeButton{
+    -fx-background-color: darkred;
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+    -fx-border-width: 2;
+    -fx-border-color: darkred;
+}
+#closeButton:hover{
+    -fx-border-color: darkred;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+Button,MenuButton,ComboBox,.combo-box .list-cell,.combo-box .list-view .list-cell,.menu-button .menu-item{
+    -fx-background-color: #838383;
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+    -fx-border-width: 2;
+    -fx-border-color: #838383;
+}
+Button:hover,MenuButton:hover,ComboBox:hover,.combo-box .list-view .list-cell:hover{
+    -fx-border-color: #838383;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+.context-menu{
+    -fx-background-color: #838383;
+}
+.spinner .increment-arrow-button {
+    -fx-padding: 1 2 1 2; /*caspian.css values are 4 8 4 8 */
+}
+.spinner .decrement-arrow-button {
+    -fx-padding: 1 2 1 2; /*caspian.css values are 3 8 6 8 */
+}
+#appStyle{
+     -fx-border-style: solid;
+     -fx-border-color: #838383;
+     -fx-border-width: 3px 3px 3px 3px;
+}
+Text{
+    -fx-font-size: 14;
+}
+#logArea{
+    -fx-padding: 5px 20px 5px 5px;
+}

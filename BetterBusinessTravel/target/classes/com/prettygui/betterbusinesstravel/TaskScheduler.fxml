@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane id="appStyle" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200" prefWidth="300" stylesheets="@MyStyle.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prettygui.betterbusinesstravel.SchedulerController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="35.0" layoutY="14.0" prefHeight="21.0" prefWidth="230.0" style="-fx-text-fill: #838383;" text="Settings For Task Scheduler">
+               <font>
+                  <Font name="System Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="60.0" style="-fx-text-fill: #838383;" text="Runs Every : ">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <ComboBox fx:id="freqOption" layoutX="130.0" layoutY="60.0" prefHeight="25.0" prefWidth="120.0" promptText="Select">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="30 Mins" />
+                     <String fx:value="Hour" />
+                     <String fx:value="2 Hours" />
+                     <String fx:value="3 Hours" />
+                     <String fx:value="4 Hours" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <Label layoutX="14.0" layoutY="100.0" prefHeight="25.0" prefWidth="67.0" text="Begins At : " textFill="#838383">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <Spinner fx:id="hourOption" layoutX="130.0" layoutY="100.0" max="23" min="00" prefHeight="30.0" prefWidth="50.0"/>
+            <Spinner fx:id="minOption" layoutX="200.0" layoutY="100.0" max="59" min="00" prefHeight="30.0" prefWidth="50.0" />
+            <Label layoutX="186.0" layoutY="85.0" prefHeight="51.0" prefWidth="6.0" text=":">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Button layoutX="160.0" layoutY="150.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="60.0" onAction="#submitSchedulerVals" text="Submit" />
+            <Button fx:id="closeButton" layoutX="18.0" layoutY="150.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="60.0" onAction="#closeScheduler" text="Cancel" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
